@@ -5,6 +5,7 @@ import { Route, Switch, Router as WouterRouter } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import Nav from "./components/Nav";
 
 
 function Router() {
@@ -34,7 +35,10 @@ function App() {
       >
         <TooltipProvider>
           <Toaster />
-          <Router />
+          <Nav />
+          <div className="pt-16">
+            <Router />
+          </div>
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

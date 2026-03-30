@@ -23,15 +23,15 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden bg-background py-20 md:py-32">
-        <div 
-          className="absolute inset-0 opacity-40"
-          style={{
-            backgroundImage: `url('https://private-us-east-1.manuscdn.com/sessionFile/6HKRoBMkCN9RhiEKVbmmy6/sandbox/q86ebpPS6XkDlS7cElP3lB-img-1_1771133318000_na1fn_aGVyby1iYWNrZ3JvdW5k.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvNkhLUm9CTWtDTjlSaGlFS1ZibW15Ni9zYW5kYm94L3E4NmVicFBTNlhrRGxTN2NFbFAzbEItaW1nLTFfMTc3MTEzMzMxODAwMF9uYTFmbl9hR1Z5YnkxaVlXTnJaM0p2ZFc1ay5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=AybSPrvBZBO29nKFfGQGW-rdXgo9IlrBdOpO7fvmCaq9S7Sp82-vrwKV5r2KKIIxwxIaunQQfRpNUsLt2wAvKW7QalaQ8N3CgjAMmg-s~0QPeEzfuB54EcVOa1e~u55Du8FwyteUZYhCRqJPMbK61hM9-sVQ-K8IJ~6cbguvTR4d9ENO5o31dmYqJNLZ2FFKFqz7bQv6Lnmq7OG70PyN29UknQpIilfeoZbZOMLKWh2d9EpD64AEfVPuHkEYQfLi8ADawIqRe0qsQvkcTcV3HdBsHxuAyjafKTQiXKHsrLBvQQ1JqIzxL1HpLkPSBfPDwTaH22ND5DN2BRkIhi96Cw__')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        />
+      <section className="relative overflow-hidden bg-background py-24 md:py-36">
+        {/* Geometric background shapes */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute -top-16 -right-16 w-96 h-96 rounded-full opacity-15" style={{ background: 'oklch(0.55 0.15 35)' }} />
+          <div className="absolute top-1/3 -right-8 w-64 h-64 rounded-full opacity-10" style={{ background: 'oklch(0.48 0.06 160)' }} />
+          <div className="absolute -bottom-12 right-1/4 w-48 h-48 rotate-45 opacity-10" style={{ background: 'oklch(0.72 0.09 75)' }} />
+          <div className="absolute top-8 right-1/3 w-24 h-24 rounded-full opacity-20" style={{ background: 'oklch(0.55 0.15 35)' }} />
+        </div>
+
         <div className="container relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -41,28 +41,70 @@ export default function Home() {
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                 Plantillas completas + workflows paso a paso + guía de IA ética. Todo lo que necesitas para ofrecer teleterapia profesional en 14 días.
               </p>
-              <div className="space-y-4">
-                <Button 
-                  size="lg" 
+              <div className="space-y-3">
+                <Button
+                  size="lg"
                   onClick={scrollToPricing}
                   className="bg-accent hover:bg-accent/90 text-accent-foreground font-accent font-medium text-lg px-8 py-6 h-auto transition-all hover:scale-105"
                 >
                   Accede Ahora — $890 MXN
                 </Button>
-                <p className="text-sm text-muted-foreground">
-                  Precio sube a $1,390 el 1 de abril
+                <p className="text-sm text-muted-foreground font-accent">
+                  ⏰ Precio sube a $1,390 MXN el 1 de abril
                 </p>
               </div>
               <p className="text-sm border-thick-l border-primary pl-4 py-2 text-muted-foreground">
                 Material educativo creado por psicoterapeuta con experiencia en teleterapia. Validado por profesionales en México.
               </p>
             </div>
-            <div className="hidden lg:block">
-              <img 
-                src="https://private-us-east-1.manuscdn.com/sessionFile/6HKRoBMkCN9RhiEKVbmmy6/sandbox/q86ebpPS6XkDlS7cElP3lB-img-2_1771133309000_na1fn_dGhlcmFweS13b3Jrc3BhY2U.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvNkhLUm9CTWtDTjlSaGlFS1ZibW15Ni9zYW5kYm94L3E4NmVicFBTNlhrRGxTN2NFbFAzbEItaW1nLTJfMTc3MTEzMzMwOTAwMF9uYTFmbl9kR2hsY21Gd2VTMTNiM0pyYzNCaFkyVS5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=DgrfvU94D2LNiveB2HZsBvVEfHXWtmXU0DQdyCdFLpVhuP-0IatUG5Ngg8jU-c4rnlxTlZim79i39cvutiAgPZEoogiKpPsce3dytBeLeUy-58xsMy1Ek8QvdlMvkRh0GPx6vFCXTZ62La~1sN7DRyzRFOHC2r5z1-J8kQ26OrvplYy1gnU5NDxKycAVhTg6X5k4hm4ALggr1mY~WbYsUEN0mJr~saZtsWRyxd8XoV34fHmUt0lye9EF6PvvJOhXM8kBYmy0gwus2Bs2ARV6PyQDxbX7XtN12ubSMGBPcZvyj9Dig1U3ABJyieFebwvncDzypeP3WEQpnaw5-QcagA__"
-                alt="Espacio de trabajo de teleterapia profesional"
-                className="rounded-lg shadow-2xl w-full"
-              />
+
+            {/* Hero visual — geometric composition */}
+            <div className="hidden lg:flex items-center justify-center">
+              <div className="relative w-full max-w-sm aspect-square">
+                {/* Background card */}
+                <div className="absolute inset-0 rounded-2xl" style={{ background: 'oklch(0.96 0.015 35)' }} />
+                {/* Terracotta block top-right */}
+                <div className="absolute top-0 right-0 w-2/3 h-2/3 rounded-2xl" style={{ background: 'oklch(0.55 0.15 35)', opacity: 0.9 }} />
+                {/* Sage accent bottom-left */}
+                <div className="absolute bottom-8 left-8 w-1/2 h-1/2 rounded-xl" style={{ background: 'oklch(0.48 0.06 160)', opacity: 0.85 }} />
+                {/* Content card overlay */}
+                <div className="absolute inset-6 rounded-xl bg-background/95 shadow-xl flex flex-col justify-center p-6 gap-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style={{ background: 'oklch(0.55 0.15 35)' }}>
+                      <FileText className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <p className="font-accent text-xs text-muted-foreground uppercase tracking-wide">Módulo 1</p>
+                      <p className="font-display font-bold text-sm text-foreground">Documentos Cliente</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style={{ background: 'oklch(0.48 0.06 160)' }}>
+                      <ClipboardList className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <p className="font-accent text-xs text-muted-foreground uppercase tracking-wide">Módulo 2</p>
+                      <p className="font-display font-bold text-sm text-foreground">Workflow Clínico</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style={{ background: 'oklch(0.72 0.09 75)' }}>
+                      <MessageSquare className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <p className="font-accent text-xs text-muted-foreground uppercase tracking-wide">Módulo 3</p>
+                      <p className="font-display font-bold text-sm text-foreground">Scripts WhatsApp</p>
+                    </div>
+                  </div>
+                  <div className="mt-2 pt-3 border-t border-border">
+                    <p className="font-accent text-xs text-center text-muted-foreground">+ 2 módulos más · Acceso inmediato</p>
+                  </div>
+                </div>
+                {/* Ochre accent circle */}
+                <div className="absolute -bottom-4 -right-4 w-16 h-16 rounded-full shadow-lg flex items-center justify-center font-accent font-bold text-sm" style={{ background: 'oklch(0.72 0.09 75)', color: 'oklch(0.2 0.02 75)' }}>
+                  14 días
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -115,7 +157,7 @@ export default function Home() {
       </section>
 
       {/* SOLUTION SECTION */}
-      <section className="py-20 md:py-32 bg-background">
+      <section id="modulos" className="py-20 md:py-32 bg-background">
         <div className="container">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-foreground">
             Todo Lo Que Necesitas Para Teleterapia Profesional — En Un Solo Lugar
@@ -301,26 +343,25 @@ export default function Home() {
       </section>
 
       {/* HOW IT WORKS - TIMELINE */}
-      <section className="py-20 md:py-32 bg-card relative overflow-hidden">
-        <div 
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: `url('https://private-us-east-1.manuscdn.com/sessionFile/6HKRoBMkCN9RhiEKVbmmy6/sandbox/q86ebpPS6XkDlS7cElP3lB-img-4_1771133314000_na1fn_YWJzdHJhY3QtcGF0dGVybg.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvNkhLUm9CTWtDTjlSaGlFS1ZibW15Ni9zYW5kYm94L3E4NmVicFBTNlhrRGxTN2NFbFAzbEItaW1nLTRfMTc3MTEzMzMxNDAwMF9uYTFmbl9ZV0p6ZEhKaFkzUXRjR0YwZEdWeWJnLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=D3oA9U~uMf~HmS8hHnOBFiteH3WN8REa-ooHVFDi99Cme32zRHyK2iTKk7OxZax8i6sPLqPWIkYniu8epuBBc838YEYtEBfaoZX~7ms71CY-wQ2IHMr2jUyteuUJrV5AdQSsLnC7y2OMkizWmF55L1MJdDKRTOA~YFn-MRkndj4ID~vXFcLnupCBDUpmadM4wrLb~qCLugjTo3FWpghNWRebk8XUzZ6zmL0ppaTqpS4cZZpeVQRE~khNiabxvfq8LxE~3Y3aRCchQmCTSW565Zyqp6uLmfGfw0n8XuOwykwWYJ4hYwDxZLp~xbXKmGWouN7skKw9vaH0zFw8BbFcLQ__')`,
-            backgroundSize: 'cover',
-          }}
-        />
+      <section id="como-funciona" className="py-20 md:py-32 bg-card relative overflow-hidden">
+        {/* CSS geometric background instead of broken image */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-5">
+          <div className="absolute top-0 left-0 w-full h-full" style={{ backgroundImage: 'repeating-linear-gradient(45deg, oklch(0.55 0.15 35) 0px, oklch(0.55 0.15 35) 1px, transparent 1px, transparent 40px)', backgroundSize: '40px 40px' }} />
+        </div>
         <div className="container relative">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 text-foreground">
             De "No Sé Por Dónde Empezar" a "Sistema Funcionando"
           </h2>
           <p className="text-center text-2xl font-display font-bold text-primary mb-16">en 14 Días</p>
           
-          <div className="max-w-4xl mx-auto space-y-12">
+          <div className="max-w-4xl mx-auto">
+            {/* Phase 1 */}
             <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0">
-                <div className="w-20 h-20 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-accent text-2xl font-bold">
+              <div className="flex-shrink-0 flex flex-col items-center">
+                <div className="w-14 h-14 md:w-20 md:h-20 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-accent text-lg md:text-2xl font-bold">
                   1-3
                 </div>
+                <div className="w-0.5 h-16 bg-border mt-2" />
               </div>
               <div className="flex-1 pt-2">
                 <h3 className="font-display text-2xl font-bold mb-2 text-foreground">
@@ -344,11 +385,13 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Phase 2 */}
             <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0">
-                <div className="w-20 h-20 rounded-full bg-secondary text-secondary-foreground flex items-center justify-center font-accent text-2xl font-bold">
+              <div className="flex-shrink-0 flex flex-col items-center">
+                <div className="w-14 h-14 md:w-20 md:h-20 rounded-full bg-secondary text-secondary-foreground flex items-center justify-center font-accent text-lg md:text-2xl font-bold">
                   4-7
                 </div>
+                <div className="w-0.5 h-16 bg-border mt-2" />
               </div>
               <div className="flex-1 pt-2">
                 <h3 className="font-display text-2xl font-bold mb-2 text-foreground">
@@ -372,11 +415,13 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Phase 3 */}
             <div className="flex gap-6 items-start">
-              <div className="flex-shrink-0">
-                <div className="w-20 h-20 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-accent text-2xl font-bold">
+              <div className="flex-shrink-0 flex flex-col items-center">
+                <div className="w-14 h-14 md:w-20 md:h-20 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-accent text-lg md:text-2xl font-bold">
                   8-14
                 </div>
+                <div className="w-0.5 h-16 bg-border mt-2" />
               </div>
               <div className="flex-1 pt-2">
                 <h3 className="font-display text-2xl font-bold mb-2 text-foreground">
@@ -400,7 +445,7 @@ export default function Home() {
               </div>
             </div>
 
-            <Card className="p-8 bg-primary text-primary-foreground border-0">
+            <Card className="p-8 bg-primary text-primary-foreground border-0 mt-8">
               <p className="text-xl font-display font-bold text-center">
                 Resultado: Sistema completo, profesional, listo para pacientes.
               </p>
@@ -482,9 +527,9 @@ export default function Home() {
               <p className="font-accent text-sm uppercase tracking-wide text-primary mb-2 font-semibold">
                 Precio de Lanzamiento
               </p>
-              <div className="flex items-center justify-center gap-4 mb-4">
-                <span className="text-3xl text-muted-foreground line-through">$1,390 MXN</span>
-                <span className="font-display text-6xl font-bold text-primary">$890 MXN</span>
+              <div className="flex flex-wrap items-center justify-center gap-3 mb-4">
+                <span className="text-xl md:text-3xl text-muted-foreground line-through">$1,390 MXN</span>
+                <span className="font-display text-4xl md:text-6xl font-bold text-primary">$890 MXN</span>
               </div>
               <div className="inline-flex items-center gap-2 bg-accent/20 text-accent px-4 py-2 rounded-full">
                 <Clock className="w-4 h-4" />
@@ -527,11 +572,14 @@ export default function Home() {
               </p>
             </div>
 
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-accent font-semibold text-xl py-7 h-auto transition-all hover:scale-105"
+              asChild
             >
-              Accede Ahora — $890 MXN
+              <a href="https://buy.stripe.com/6oUfZbc5YdMn7ng9jn3F600?locale=es-419" target="_blank" rel="noopener noreferrer">
+                Accede Ahora — $890 MXN
+              </a>
             </Button>
 
             <p className="text-center text-sm text-muted-foreground mt-6">
@@ -542,72 +590,72 @@ export default function Home() {
       </section>
 
       {/* FAQ SECTION */}
-      <section className="py-20 md:py-32 bg-background">
+      <section id="faq" className="py-20 md:py-32 bg-background">
         <div className="container max-w-4xl">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-foreground">
             Preguntas Frecuentes
           </h2>
-          
-          <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1" className="border border-border rounded-lg px-6 bg-card">
-              <AccordionTrigger className="font-display text-lg font-bold text-foreground hover:no-underline">
+
+          <Accordion type="single" collapsible className="space-y-3">
+            <AccordionItem value="item-1" className="border border-border border-thick-l border-primary rounded-lg px-6 bg-card">
+              <AccordionTrigger className="font-display text-lg font-bold text-foreground hover:no-underline py-5">
                 ¿Esto es asesoría legal?
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed">
+              <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
                 No. Es material educativo basado en mejores prácticas y referencias normativas (LFPDPPP, NOM-004). Siempre recomendamos revisar con abogado local si tienes dudas específicas sobre tu caso.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-2" className="border border-border rounded-lg px-6 bg-card">
-              <AccordionTrigger className="font-display text-lg font-bold text-foreground hover:no-underline">
+            <AccordionItem value="item-2" className="border border-border border-thick-l border-primary rounded-lg px-6 bg-card">
+              <AccordionTrigger className="font-display text-lg font-bold text-foreground hover:no-underline py-5">
                 ¿Las plantillas ya están "listas"?
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed">
+              <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
                 Están pre-escritas con estructura completa, pero necesitas personalizarlas (tu nombre, datos de contacto, detalles de tu práctica). Incluimos guía de qué cambiar y qué no tocar.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-3" className="border border-border rounded-lg px-6 bg-card">
-              <AccordionTrigger className="font-display text-lg font-bold text-foreground hover:no-underline">
+            <AccordionItem value="item-3" className="border border-border border-thick-l border-primary rounded-lg px-6 bg-card">
+              <AccordionTrigger className="font-display text-lg font-bold text-foreground hover:no-underline py-5">
                 ¿Funciona si no uso IA?
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed">
+              <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
                 Sí. El módulo de IA es opcional. Todo lo demás (Aviso de Privacidad, Consentimiento, WhatsApp, Notas, etc.) es independiente.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-4" className="border border-border rounded-lg px-6 bg-card">
-              <AccordionTrigger className="font-display text-lg font-bold text-foreground hover:no-underline">
+            <AccordionItem value="item-4" className="border border-border border-thick-l border-secondary rounded-lg px-6 bg-card">
+              <AccordionTrigger className="font-display text-lg font-bold text-foreground hover:no-underline py-5">
                 ¿Qué pasa si tengo preguntas después de comprar?
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed">
+              <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
                 Incluimos email de soporte para dudas sobre cómo usar las plantillas (no asesoría legal/clínica). Respondemos en 24-48 horas.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-5" className="border border-border rounded-lg px-6 bg-card">
-              <AccordionTrigger className="font-display text-lg font-bold text-foreground hover:no-underline">
+            <AccordionItem value="item-5" className="border border-border border-thick-l border-secondary rounded-lg px-6 bg-card">
+              <AccordionTrigger className="font-display text-lg font-bold text-foreground hover:no-underline py-5">
                 ¿Sirve para psiquiatras/coaches/otros profesionales?
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed">
+              <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
                 Está diseñado específicamente para psicólogos/psicoterapeutas en México. Otros profesionales pueden adaptarlo, pero algunas secciones (como NOM-004) son específicas de psicología.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-6" className="border border-border rounded-lg px-6 bg-card">
-              <AccordionTrigger className="font-display text-lg font-bold text-foreground hover:no-underline">
+            <AccordionItem value="item-6" className="border border-border border-thick-l border-secondary rounded-lg px-6 bg-card">
+              <AccordionTrigger className="font-display text-lg font-bold text-foreground hover:no-underline py-5">
                 ¿Hay actualizaciones?
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed">
+              <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
                 Sí. Si actualizamos plantillas o agregamos contenido en 2026, lo recibes sin costo adicional.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-7" className="border border-border rounded-lg px-6 bg-card">
-              <AccordionTrigger className="font-display text-lg font-bold text-foreground hover:no-underline">
+            <AccordionItem value="item-7" className="border border-border border-thick-l border-accent rounded-lg px-6 bg-card">
+              <AccordionTrigger className="font-display text-lg font-bold text-foreground hover:no-underline py-5">
                 ¿Ofrecen implementación personalizada?
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed">
+              <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
                 No por ahora. Esto es producto "hágalo usted mismo" con guía completa. Si necesitas consultoría 1-a-1, contáctanos para cotización separada.
               </AccordionContent>
             </AccordionItem>
@@ -617,13 +665,12 @@ export default function Home() {
 
       {/* FINAL CTA */}
       <section className="py-20 md:py-32 bg-primary text-primary-foreground relative overflow-hidden">
-        <div 
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: `url('https://private-us-east-1.manuscdn.com/sessionFile/6HKRoBMkCN9RhiEKVbmmy6/sandbox/q86ebpPS6XkDlS7cElP3lB-img-3_1771133324000_na1fn_ZG9jdW1lbnRzLXRlbXBsYXRl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvNkhLUm9CTWtDTjlSaGlFS1ZibW15Ni9zYW5kYm94L3E4NmVicFBTNlhrRGxTN2NFbFAzbEItaW1nLTNfMTc3MTEzMzMyNDAwMF9uYTFmbl9aRzlqZFcxbGJuUnpMWFJsYlhCc1lYUmwucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=RgK8U5skmZGf0il~6BqLhxZqgGwDxZVw4VI-lCO4-fu0cw59L5Vo35FY5C-W3OodSh4WCPW~4XWRGL-H-INmKG43OZGcXzfnejOlIzTmqMtHjB8Hm9sP0eg-YfRp9H08tTmYbvQtJmceIPCdDRM44TXNH-CTJaoXZ4E5z4tUXvWEVqznqFFKgRSIGfNv0IsIZzn9ghZ6-3Ysn4yxVTV3GgbQXLCB4JAIsPbMxVswQGzeqBHlCPGgWCQ-mjOPiL5OxMsF1yWB1UtWBQgmtHUHPzH0U99ZAtBwiSXD92Do29nMADnOU3Vvb4~wOnBWT~rd7xD9HGu0BMLQ-~kUOg3exQ__')`,
-            backgroundSize: 'cover',
-          }}
-        />
+        {/* Geometric CSS background */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full opacity-10 bg-primary-foreground" />
+          <div className="absolute -bottom-16 -right-16 w-80 h-80 rounded-full opacity-10 bg-primary-foreground" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rotate-45 opacity-5 bg-primary-foreground" />
+        </div>
         <div className="container text-center relative">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-balance">
             Deja de Improvisar. Empieza a Operar Profesionalmente.
@@ -636,7 +683,7 @@ export default function Home() {
           <Button 
             size="lg" 
             onClick={scrollToPricing}
-            className="bg-accent hover:bg-accent/90 text-accent-foreground font-accent font-semibold text-2xl px-12 py-8 h-auto transition-all hover:scale-105 shadow-2xl"
+            className="bg-accent hover:bg-accent/90 text-accent-foreground font-accent font-semibold text-lg md:text-2xl px-8 md:px-12 py-5 md:py-8 h-auto transition-all hover:scale-105 shadow-2xl w-full sm:w-auto"
           >
             Accede Ahora — $890 MXN
           </Button>
