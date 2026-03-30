@@ -10,7 +10,7 @@ import Nav from "./components/Nav";
 
 function Router() {
   return (
-    <WouterRouter base="/teleterapia-pro-landing">
+    <WouterRouter base="">
       <Switch>
         <Route path={"/"} component={Home} />
         <Route path={"/404"} component={NotFound} />
